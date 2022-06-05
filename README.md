@@ -28,8 +28,8 @@
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
-   git clone https://github.com/zihelyu/lede
-   cd lede
+   git clone https://github.com/zihelyu/openwrt
+   cd openwrt
    ./scripts/feeds update -a
    ./scripts/feeds install -a
    make menuconfig
@@ -50,7 +50,7 @@
 二次编译：
 
 ```bash
-cd lede
+cd openwrt
 git pull
 ./scripts/feeds update -a
 ./scripts/feeds install -a

@@ -53,6 +53,7 @@
 			label = "lan3";
 		};
 	};
+};
 
 &state_default {
 	gpio {

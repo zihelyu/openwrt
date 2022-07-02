@@ -1,13 +1,12 @@
-# 欢迎来到 Lean 的 Openwrt 源码仓库
+# 欢迎来到 Zihelyu 的 Openwrt 源码仓库
 
-如何编译自己需要的 OpenWrt 固件 [English](./README_EN.md)
+如何编译自己需要的 OpenWrt 固件
 
 ## 注意
 
-0. **免责声明：!! 这个源代码不欢迎 “Redmi ax6 机友会” 的群里任何一位成员 直接 或者 间接 使用，否则一旦发生全家富贵的事情一律均和本人无关！！**
 1. **不要用 root 用户进行编译**
 2. 国内用户编译前最好准备好梯子
-3. 默认登陆IP 192.168.1.1 密码 password
+3. 默认登陆IP 10.0.0.1 密码 password
 
 ## 编译命令
 
@@ -29,7 +28,7 @@
 3. 下载源代码，更新 feeds 并选择配置
 
    ```bash
-   git clone https://github.com/coolsnowwolf/lede
+   git clone https://github.com/zihelyu/lede
    cd lede
    ./scripts/feeds update -a
    ./scripts/feeds install -a
@@ -114,24 +113,4 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 1. 源代码中绝不含任何后门和可以监控或者劫持你的 HTTPS 的闭源软件， SSL 安全是互联网最后的壁垒。安全干净才是固件应该做到的；
 
-2. 如有技术问题需要讨论，欢迎加入 QQ 讨论群： OP 共享技术交流群 ,号码 297253733 ，加群链接: 点击链接加入群聊【 OP 共享技术交流群】：[点击加入](https://jq.qq.com/?_wv=1027&k=5yCRuXL "OP共享技术交流群")
-
-3. 想学习 OpenWrt 开发，但是摸不着门道？自学没毅力？基础太差？怕太难学不会？跟着佐大学 OpenWrt 开发入门培训班助你能学有所成
-报名地址：[点击报名](http://forgotfun.org/2018/04/openwrt-training-2018.html "报名")
-
-4. QCA IPQ60xx 开源仓库地址：<https://github.com/coolsnowwolf/openwrt-gl-ax1800>
-
-5. 稳定版仓库地址：<https://github.com/coolsnowwolf/openwrt>
-
-## 软路由介绍
-
-友情推荐不恰饭：如果你在寻找一个低功耗小体积性能不错的 x86 / x64 路由器，我个人建议可以考虑小马v1 的铝合金版本
-(N3710 4千兆)：[页面介绍](https://item.taobao.com/item.htm?spm=a230r.1.14.20.144c763fRkK0VZ&id=561126544764)
-
-![xm1](doc/xm5.jpg) ![xm2](doc/xm6.jpg)
-
-## 捐贈
-
-如果你觉得此项目对你有帮助，可以捐助我们，以鼓励项目能持续发展，更加完善
-
-支付宝 ![alipay](doc/alipay_donate.jpg) 微信 ![wechat](doc/wechat_donate.jpg)
+2. 稳定版仓库地址：<https://github.com/zihelyu/lede>

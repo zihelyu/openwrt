@@ -89,24 +89,26 @@
 	mtd-mac-address = <&factory 0xe006>;
 };
 
+&gmac1 {
+	mtd-mac-address = <&factory 0xe000>;
+	status = "okay";
+};
+
+&gsw {
+	mediatek,portmap = "lwlll";
+	status = "okay";
+};
+
+&hnat {
+	mtketh-wan = "eth1";
+	mtketh-ppd = "eth0";
+	mtketh-lan = "eth0";
+	mtketh-max-gmac = <2>;
+	/delete-property/ mtkdsa-wan-port;
+};
+
 &switch0 {
-	ports {
-		port@1 {
-			status = "okay";
-			label = "wan";
-			mtd-mac-address = <&factory 0xe000>;
-		};
-
-		port@2 {
-			status = "okay";
-			label = "lan2";
-		};
-
-		port@3 {
-			status = "okay";
-			label = "lan1";
-		};
-	};
+	status = "disabled";
 };
 
 &state_default {

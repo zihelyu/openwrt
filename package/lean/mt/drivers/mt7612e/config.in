@@ -44,6 +44,14 @@ config MT76X2E_AP_TXBF_SUPPORT
 	bool
         default n
 
+config MT76X2E_RT_DOT11K_RRM
+	bool
+        default y
+
+config MT76X2E_RT_DOT11R_FT
+	bool
+        default y
+
 
 endif
 
